@@ -29,7 +29,7 @@ Finalizando esses itens você terá terminado a etapa 01 da avaliação.
 
 Finalizando esses itens você terá terminado a etapa 02 da avaliação.
 
-### 02 - Diferenciando JR de PLENO ###
+### 03 - Diferenciando JR de PLENO ###
 * Caso os produtos em destaque tenham sido feitos estáticos, precisamos que modifique para que seus dados venham de uma api ou um JSON e sejam exbidos dinâmicamente na página. Dessa forma, caso eu cadastre um novo produto no JSON a página também o exibirá.
 
 Temos algumas funcionalidades que estão no layout e precisamos que sejam desenvolvidas:
