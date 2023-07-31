@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- title -->
+  <title>Teste Vaga</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/extends.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="/lib/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/lib/slick-1.8.1/slick/slick-theme.css" />
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript" src="/lib/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header-space">
+
+    <nav class="nav-bar">
+
+      <div class="nav-item-1">
+
+        <!-- Botão do menu hamburguer -->
+        <div onclick="toggleMenu()"><img src="assets/imgs/icon_hamburguer.png" class="logo-menu"></div>
+
+        <img src="assets/imgs/Logo_N1.png" class="logo-emp">
+      </div>
+
+      <div class="nav-item-2">
+
+        <div class="nav-item-interno">
+          <img src="assets/imgs/paper-plane.png" class="imgLay">
+          <a href="#" class="nav-link">CONTATO</a>
+        </div>
+
+        <div class="nav-item-interno busca">
+          <img src="assets/imgs/search-solid.png" class="imgLay">
+          <a href="#" class="nav-link">BUSCA</a>
+        </div>
+
+
+
+        <div class="nav-item-interno">
+          <img src="assets/imgs/shopping-bag-solid.png" class="imgLay">
+          <a href="#" class="nav-link" id="p">0</a>
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!-- Itens de navegação -->
+    <!-- <div class="menu-div">
+      <ul class="nav-burguer" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div> -->
+  </header>
+
+  <!-- Banners -->
+  <section class="section-banner">
+    <div class="multiple-items">
+      <div>
+        <img src="assets/imgs/principal_banner_desktop 1.png" alt="Imagem 1">
+      </div>
+
+      <div>
+        <img src="assets/imgs/principal_banner_desktop_02.png" alt="Imagem 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- Banners -->
+  <section class="section-banner-mobile">
+    <div class="multiple-items-mobile">
+      <div>
+        <img src="assets/imgs/principal_banner_mobile 1.png" alt="Imagem 1">
+      </div>
+
+      <div>
+        <img src="assets/imgs/principal_banner_mobile_02.png" alt="Imagem 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- Banners 2 -->
+  <section class="section-banner-2">
+    <div class="container-sub-banner">
+
+      <div class="sub-banner-1">
+        <img src="assets/imgs/zelda_banner.png" class="banner-img1">
+        <div class="sub-banner-text">
+          <p class="text-bloco">The Legend of Zelda - Breath of the wild</p>
+          <img src="assets/imgs/Line 4.png" class="line-banner-img">
+        </div>
+      </div>
+
+      <div class="sub-banner-2">
+        <img src="assets/imgs/sekiro_banner.png" class="banner-img2">
+        <div class="sub-banner-text">
+          <p class="text-bloco">SEKIRO - Shadows die twice</p>
+          <img src="assets/imgs/Line 4.png" class="line-banner-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Jogos-->
+  <section class="section-shelf">
+
+    <div class="container-title">
+      <img src="assets/imgs/Group 6.png" class="logo-produtos-destaque">
+      <p class="shelf-title">Produtos em destaque</p>
+    </div>
+
+    <!-- Jogos no destaque -->
+    <div class="container-cards">
+
+      <div class="card-game">
+        <img src="assets/imgs/product-outriders.png" class="game-image">
+
+        <div class="card-content">
+          <p class="text-game">Outriders</p>
+          <p class="price">R$ 200,00</p>
+
+          <!-- Elemento do botão -->
+          <div class="container-btn">
+            <button onclick="alterarTextoECor()" id="meu-botao1" class="botao-add-to">COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-game">
+        <img src="assets/imgs/product-cyberpunk2077.png" class="game-image">
+
+        <div class="card-content">
+          <p class="text-game">CYBERPUNK 2077</p>
+          <p class="price">R$ 200,00</p>
+
+          <!-- Elemento do botão -->
+          <div class="container-btn">
+            <button onclick="alterarTextoECor()" id="meu-botao1" class="botao-add-to">COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-game">
+        <img src="assets/imgs/product-donkey-kong-country-tropical-freeze.png" class="game-image">
+
+        <div class="card-content">
+          <p class="text-game">Donkey Kong Countru Tropical Freeze</p>
+          <p class="price">R$ 200,00</p>
+
+          <!-- Elemento do botão -->
+          <div class="container-btn">
+            <button onclick="alterarTextoECor()" id="meu-botao1" class="botao-add-to">COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Cards Jogos-->
+  <section class="section-shelf">
+
+    <div class="container-title">
+      <img src="assets/imgs/Group 6.png" class="logo-produtos-destaque">
+      <p class="shelf-title">Dicas de games</p>
+    </div>
+
+    <!-- Jogos no destaque -->
+    <div class="container-cards-dicas">
+
+      <div class="card-game-dicas">
+        <img src="assets/imgs/image 7.png" class="game-image-dicas">
+
+        <div class="index-card-game">
+          1
+        </div>
+      </div>
+
+      <div class="card-game-dicas">
+        <img src="assets/imgs/image 8.png" class="game-image-dicas">
+
+        <div class="index-card-game">
+          2
+        </div>
+      </div>
+
+      <div class="card-game-dicas">
+        <img src="assets/imgs/image 9.png" class="game-image-dicas">
+
+        <div class="index-card-game">
+          3
+        </div>
+      </div>
+
+      <div class="card-game-dicas">
+        <img src="assets/imgs/image 10.png" class="game-image-dicas">
+
+        <div class="index-card-game">
+          4
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="section-footer">
+
+    <!-- Conteúdo do rodapé -->
+    <div class="container-img-footer">
+      <img src="assets/imgs/logo_header 1.png" class="logoN1">
+    </div>
+
+    <div class="container-text-footer">
+      <p class="text-footer">Agência N1 - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- script -->
+  <script src="scripts/index.js"></script>
+
+
+</body>
+
+</html>

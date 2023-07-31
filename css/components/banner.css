@@ -1,0 +1,19 @@
+
+.multiple-items{
+    height: 800px;
+}
+
+@media (max-width: 992px) {
+
+    .section-banner {
+        display: none;
+    }
+}
+
+
+@media (min-width: 993px) {
+
+    .section-banner-mobile {
+        display: none;
+    }
+}

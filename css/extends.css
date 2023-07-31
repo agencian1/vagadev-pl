@@ -1,0 +1,9 @@
+@import './variables.css';
+@import './globals.css';
+
+@import './components/header.css';
+@import './components/banner.css';
+@import './components/subbanner.css';
+@import './components/shelfs.css';
+@import './components/cardsdicas.css';
+@import './components/footer.css';

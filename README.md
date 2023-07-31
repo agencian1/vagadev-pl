@@ -1,3 +1,7 @@
+# Como rodar o projeto #
+
+Foi utilizado o Live Server.
+
 # Avaliação Front-End N1 #
 
 Leia atentamente até o final.
